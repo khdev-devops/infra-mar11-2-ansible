@@ -1,0 +1,11 @@
+# Detta är ett exempel på en inventory-fil för Ansible
+#   referens: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html
+# Kopiera denna fil till `inventory` och fyll i rätt värden för din EC2-instans.
+# 
+# Instruktioner:
+# 1. Byt ut <EC2-IP> med den faktiska publika IP-adressen till din EC2-instans
+# 2. Se till att din SSH-nyckel har rätt sökväg
+# 3. Använd `ansible -i inventory all -m ping` för att testa anslutningen
+
+[webserver]
+ec2-instance ansible_host=<EC2-IP> ansible_user=ec2-user ansible_private_key_file=~/.ssh/my-key

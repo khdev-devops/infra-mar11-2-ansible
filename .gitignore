@@ -1,0 +1,28 @@
+# Ansible-relaterade filer
+*.retry
+*.log
+*.swp
+*.bak
+*.tmp
+*.lock
+
+# Ansible-vault filer (känslig information)
+*.vault
+*.vault.yml
+secrets.yml
+vault_pass.txt
+
+# SSH-nycklar (ska aldrig läggas i repo!)
+id_rsa*
+tofu-key*
+*.pem
+
+# Inventory-filer (om de innehåller känslig info)
+inventory
+*.inventory
+hosts
+
+# System- och editorfiler
+.vscode/
+.DS_Store
+Thumbs.db
