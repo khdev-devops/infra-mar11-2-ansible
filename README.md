@@ -40,6 +40,10 @@ Lycka till!
    ```bash
    ssh -i ~/.ssh/tofu-key ec2-user@<EC2-IP>
    ```
+   Du ska inte göra något på EC2-instansen så gå tillbaka till CloudShell:
+   ```bash
+   exit
+   ```
 
 4. Försök köra Ansible-playbooken:
    ```bash
